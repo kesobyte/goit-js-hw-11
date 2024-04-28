@@ -1,15 +1,42 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page title</title>
-    <link rel="stylesheet" href="./sass/index.scss" />
-    <script type="module" src="./index.js"></script>
+    <title>Image Search</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
   </head>
   <body>
-    <h1>Example title</h1>
-    <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <include src="./partials/example.html"></include>
+    <header class="header">
+      <form class="search-form" id="search-form">
+        <div class="search-container">
+          <input
+            type="text"
+            name="searchQuery"
+            autocomplete="off"
+            placeholder="Search images..."
+            class="search-input"
+          />
+          <button type="submit" class="fas fa-search search-icon"></button>
+        </div>
+      </form>
+    </header>
+
+    <main class="main-content">
+      <section class="section">
+        <div class="container">
+          <div class="gallery"></div>
+        </div>
+      </section>
+      <div class="load-more">
+        <button class="loadMoreBtn is-hidden">Load More</button>
+      </div>
+    </main>
+
+    <script src="./js/script.js" type="module"></script>
   </body>
 </html>
