@@ -13,7 +13,6 @@ const loadMoreBtn = document.querySelector('.loadMoreBtn');
 //SimpleLightBox
 const lightbox = new SimpleLightbox('.lightbox', {
   captionsData: 'alt',
-  disableRightClick: 'true',
 });
 
 let totalHits = 0;
