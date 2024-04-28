@@ -9,6 +9,6 @@ export const config = {
     orientation: 'horizontal',
     safesearch: true,
     page: 1,
-    per_page: 20,
+    per_page: 40,
   },
 };
